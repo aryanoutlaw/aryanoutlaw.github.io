@@ -1,205 +1,143 @@
+
 <!DOCTYPE html>
+
 <html lang="en">
+
     <head>
+
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link rel="stylesheet" href="assets/css/styles.css">
+        <title>Aryan Saini - Personal Site</title>
 
-        <!-- =====BOX ICONS===== -->
-        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="Styles/Main.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=VT323&display=swap">
 
-        <title>Aryan Saini Portfolio</title>
     </head>
+
     <body>
-        <!--===== HEADER =====-->
-        <header class="l-header">
-            <nav class="nav bd-grid">
-                <div>
-                    <a href="#" class="nav__logo">Aryan</a>
+
+        <canvas id="Canvas3D"></canvas>
+
+        <div id="MainDiv">
+
+            <div id="MouseGlow"></div>
+            <div id="MouseGlowBlur"></div>
+                
+            <div id="RightPanel">
+
+                <div id="Section1" class="Section">
+                    <h2>About</h2>
+                    <p>AI Engineer with strong expertise in computer vision and deep learning, demonstrated through multiple multimodal projects. Passionate about developing end-to-end machine learning systems with particular focus on real-time processing and deployment. Proficient in PyTorch, TensorFlow, and MLOps tools.</p>
                 </div>
-
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list">
-                        <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
-                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-                        <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
-                        <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
-                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
-                    </ul>
-                </div>
-
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class='bx bx-menu'></i>
-                </div>
-            </nav>
-        </header>
-
-        <main class="l-main">
-            <!--===== HOME =====-->
-            <section class="home bd-grid" id="home">
-                <div class="home__data">
-                    <h1 class="home__title">Hi,<br>I'am <span class="home__title-color">Aryan</span><br> DSA Enthusiast</h1>
-
-                    <a href="#" class="button">Contact</a>
-                </div>
-
-                <div class="home__social">
-                    <a href="https://www.linkedin.com/in/aryan-saini-0a4505264?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
+                
+                <div id="Section2" class="Section">
                     
-                    <a href="https://github.com/aryanoutlaw" class="home__social-icon"><i class='bx bxl-github' ></i></a>
-                </div>
+                    <h2>Projects</h2>
+                    <p>Selection of my core ML engineering projects demonstrating full-stack AI development capabilities from research to deployment:</p>
+                    <br>
 
-                <div class="home__img">
-                    <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                        <mask id="mask0" mask-type="alpha">
-                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
-                        </mask>
-                        <g mask="url(#mask0)">
-                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
-                            <image class="home__blob-img" x="50" y="60" href="assets/img/perfil.png"/>
-                        </g>
-                    </svg>
-                </div>
-            </section>
+                    <a href="https://github.com/aryanoutlaw/ai-sentiment-model" target="_blank" class="Project">
+                        <p data-value="Multimodal Sentiment Analysis " style="color: white; font-weight: bold; ">Multimodal Sentiment Analysis </p>
+                        <p data-value="BERT + 3D ResNet Fusion · 68% Accuracy · Real-time Streamlit Dashboard">BERT + 3D ResNet Fusion · 68% Accuracy · Real-time Streamlit Dashboard</p>
+                        <div class="Separator"></div>
+                        <p data-value="2024">2025</p>
+                    </a>
 
-            <!--===== ABOUT =====-->
-            <section class="about section " id="about">
-                <h2 class="section-title">About</h2>
-
-                <div class="about__container bd-grid">
-                    <div class="about__img">
-                        <img src="assets/img/about.jpg" alt="">
-                    </div>
+                    <a href="https://github.com/aryanoutlaw/tennis-analysis" target="_blank" class="Project">
+                        <p data-value="Tennis Match Analysis " style="color: white; font-weight: bold; ">Tennis Match Analysis </p>
+                        <p data-value="YOLOv8 Tracking · Court Keypoint CNN · OpenCV Pipeline">YOLOv8 Tracking ·               Court Keypoint CNN · OpenCV Pipeline</p>
+                        <div class="Separator"></div>
+                        <p data-value="2024">2024</p>
+                    </a>
                     
-                    <div>
-                        <h2 class="about__subtitle">I am Aryan Saini</h2>
-                        <p class="about__text">Hey Visitors This is my portfolio and here you will know about my achievements and about my projects</p>           
-                    </div>                                   
-                </div>
-            </section>
-
-            <!--===== SKILLS =====-->
-            <section class="skills section" id="skills">
-                <h2 class="section-title">Skills</h2>
-
-                <div class="skills__container bd-grid">          
-                    <div>
-                        <h2 class="skills__subtitle">Profesional Skills</h2>
-                        <p class="skills__text">I know Video editing and know how to code in python and java language.</p>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-html5 skills__icon'></i>
-                                <span class="skills__name">HTML5</span>
-                            </div>
-                            <div class="skills__bar skills__html">
-
-                            </div>
-                            <div>
-                                <span class="skills__percentage">95%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-css3 skills__icon'></i>
-                                <span class="skills__name">CSS3</span>
-                            </div>
-                            <div class="skills__bar skills__css">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">85%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-javascript skills__icon' ></i>
-                                <span class="skills__name">JAVASCRIPT</span>
-                            </div>
-                            <div class="skills__bar skills__js">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">65%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxs-paint skills__icon'></i>
-                                <span class="skills__name">UX/UI</span>
-                            </div>
-                            <div class="skills__bar skills__ux">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">85%</span>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div>              
-                        <img src="assets/img/work3.jpg" alt="" class="skills__img">
-                    </div>
-                </div>
-            </section>
-
-            <!--===== WORK =====-->
-            <section class="work section" id="work">
-                <h2 class="section-title">Work</h2>
-
-                <div class="work__container bd-grid">
-                    <a href="" class="work__img">
-                        <img src="assets/img/work1.jpg" alt="">
+                    <a href="https://github.com/aryanoutlaw/Sign-Language-Prediction" target="_blank" class="Project">
+                        <p data-value="Sign Language Recognition " style="color: white; font-weight: bold; ">Sign Language Recognition </p>
+                        <p data-value="MediaPipe Holistic · 543 Landmark Model · 30 FPS Processing">MediaPipe Holistic · 543 Landmark Model · 30 FPS Processing</p>
+                        <div class="Separator"></div>
+                        <p data-value="2024">2024</p>
                     </a>
-                    <a href="" class="work__img">
-                        <img src="assets/img/work2.jpg" alt="">
-                    </a>
-                    <a href="" class="work__img">
-                        <img src="assets/img/work3.jpg" alt="">
-                    </a>
-                    <a href="" class="work__img">
-                        <img src="assets/img/work4.jpg" alt="">
-                    </a>
-                    <a href="" class="work__img">
-                        <img src="assets/img/work5.jpg" alt="">
-                    </a>
-                    <a href="" class="work__img">
-                        <img src="assets/img/work6.jpg" alt="">
+
+                    <a href="https://github.com/aryanoutlaw/Target-Classification" target="_blank" class="Project">
+                        <p data-value="Micro Doppler Classification " style="color: white; font-weight: bold;">Micro Doppler Classification </p>
+                        <p data-value="98% Accuracy · Spectrogram Processing · PyTorch Deployment">98% Accuracy · Spectrogram Processing · PyTorch Deployment</p>
+                        <div class="Separator"></div>
+                        <p data-value="2024">2024</p>
                     </a>
                 </div>
-            </section>
 
-            <!--===== CONTACT =====-->
-            <section class="contact section" id="contact">
-                <h2 class="section-title">Contact</h2>
 
-                <div class="contact__container bd-grid">
-                    <form action="" class="contact__form">
-                        <input type="text" placeholder="Name" class="contact__input">
-                        <input type="mail" placeholder="Email" class="contact__input">
-                        <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
-                        <input type="button" value="Submit" class="contact__button button">
-                    </form>
+                <div id="Section3" class="Section">
+                    <h2>Education</h2>
+                    <p><m>Noida Institute of Engineering and Technology</m><br>
+                    B.Tech in Computer Science (AI & ML)<br>
+                    CGPA: 8.55/10.0 (6th Semester)<br>
+                    Relevant Coursework: Deep Learning, Computer Vision, NLP, Time Series Analysis</p>
                 </div>
-            </section>
-        </main>
 
-        <!--===== FOOTER =====-->
-        <footer class="footer">
-            <p class="footer__title">Aryan</p>
-            <div class="footer__social">
-                <a href="#" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
-                <a href="#" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
-                <a href="#" class="footer__icon"><i class='bx bxl-twitter' ></i></a>
+                <p style="padding-bottom: 95.0vh; font-size: 1.25vh;">Made with ♥️ by Aryan Saini</p>
+
             </div>
-            <p class="footer__copy">&#169; Bedimcode. All rigths reserved</p>
-        </footer>
 
+            <div id="LeftPanel">
+                <h1>Aryan Saini</h1>
+                <h2>AI & Machine Learning Engineer</h2>
+                <p>Specializing in computer vision systems<br>and multimodal deep learning solutions<br>with production deployment expertise.</p>
+                
+                <nav class="NavContainer">
 
-        <!--===== SCROLL REVEAL =====-->
-        <script src="https://unpkg.com/scrollreveal"></script>
+                  <div class="NavItem" DataSection="Section1">
+                      <div class="NavItemDot"></div>
+                      <span class="NavItemText">About</span>
+                  </div>
 
-        <!--===== MAIN JS =====-->
-        <script src="assets/js/main.js"></script>
+                  <div class="NavItem" DataSection="Section2">
+                      <div class="NavItemDot"></div>
+                      <span class="NavItemText">Projects</span>
+                  </div>
+
+                  <div class="NavItem" DataSection="Section3">
+                      <div class="NavItemDot"></div>
+                      <span class="NavItemText">Education</span>
+                  </div>
+
+                </nav>
+
+                <div id="SocialsContainer">
+                    
+                    <a href="https://github.com/aryanoutlaw" target="_blank" title="Github">
+                        <img src="Images/GithubIcon.png" alt="Github" style="width:30px;height:30px;">
+                    </a>
+
+                    <a href="mailto:aryansaini.aiml@gmail.com" target="_blank" title="Email">
+                        <img src="Images/EmailIcon.png" alt="Email" style="width:30px;height:30px;">
+                    </a>
+                    <a href="https://www.linkedin.com/in/aryanoutlaw/" target="_blank" title="Email">
+                        <img src="Images/LinkedinIcon.png" alt="Email" style="width:30px;height:30px;">
+                    </a>
+
+                    <a href="aryan_cv.pdf" target="_blank" title="CV">
+                        <img src="Images/CVIcon.png" alt="CV" style="width:30px;height:30px;">
+                    </a>
+
+                </div>
+            
+            </div>
+
+        </div>
+
+        <button id="MainButton">🠛</button>
+
+        <audio id="ComputerBoot" src="Sounds/ComputerBoot.mp3"></audio>
+        <audio id="ComputerAmbient" src="Sounds/ComputerAmbient.mp3"></audio>
+        <audio id="ComputerBeep" src="Sounds/ComputerBeep.mp3"></audio>
+        <audio id="KeyboardPressed" src="Sounds/KeyboardPressed.mp3"></audio>
+
+        <script src="Scripts/ModelFiles.js"></script>
+        <script src="Scripts/RenderingFunctions.js"></script>
+        <script src="Scripts/TerminalFunction.js"></script>
+        <script src="Scripts/Main.js"></script>
+
     </body>
+
 </html>
